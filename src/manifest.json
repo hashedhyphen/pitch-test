@@ -1,0 +1,9 @@
+{
+  "name": "pitch-test",
+  "short_name": "pitch-test",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#673ab8"
+}

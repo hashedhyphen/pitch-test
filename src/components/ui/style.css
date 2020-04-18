@@ -1,0 +1,23 @@
+.container {
+  padding: 56px 20px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  padding: 18px 0;
+  text-align: center;
+}
+
+.btn-list {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.repo {
+  text-align: center;
+}

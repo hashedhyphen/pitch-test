@@ -1,0 +1,32 @@
+{
+  "name": "pitch-test",
+  "version": "0.0.1",
+  "author": "@hashedhyphen",
+  "dependencies": {
+    "@material-ui/core": "^4.9.10",
+    "express": "^4.17.1",
+    "preact": "^10.3.1",
+    "preact-jsx-chai": "^3.0.0",
+    "preact-markup": "^2.0.0",
+    "preact-render-to-string": "^5.1.4"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.15.1",
+    "css-loader": "^1.0.1",
+    "preact-cli": "^3.0.0-next.19",
+    "prettier": "^2.0.4",
+    "sirv-cli": "^1.0.0-next.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "typings-for-css-modules-loader": "^1.7.0"
+  },
+  "homepage": "https://pitch-test.now.sh",
+  "license": "MIT",
+  "repository": "https://github.com/hashedhyphen/pitch-test",
+  "scripts": {
+    "build": "preact build --template ./src/template.ejs",
+    "dev": "preact watch --template ./src/template.ejs",
+    "serve": "sirv build --port 8080 --cors --single",
+    "test": "prettier --check ./src/**/*.{css,js,ts,tsx}"
+  }
+}
