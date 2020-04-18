@@ -22,10 +22,12 @@ function sliderPosToFreq(sliderPos: number): number {
 function buildTweetIntentURL(freq: number): string {
   const text = `私の 440Hz は『${freq}Hz』でした！あなたも音感をテストしよう！`
   const url = window.location.href.split("?")[0]
+  const hashtags = "440Hzを当てるやつ"
 
   const usp = new URLSearchParams()
   usp.set("text", text)
   usp.set("url", url)
+  usp.set("hashtags", hashtags)
 
   return `https://twitter.com/intent/tweet?${usp}`
 }
